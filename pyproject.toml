@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "pybind11>=2.6.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adcensus"
+version = "0.1.0"
+description = "Python wrapper for AD-Census stereo matching algorithm"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy>=1.19.0",
+    "opencv-python>=4.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pybind11>=2.6.0",
+]
+
